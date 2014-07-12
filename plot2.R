@@ -15,6 +15,8 @@ subPower$dateTime = strptime( paste(subPower$Date,subPower$Time), format="%Y-%m-
 
 ### make plot 2
 with(subPower, plot(dateTime,Global_active_power, type="l"
+                    ,cex.lab=0.8
+                    ,cex.axis=0.8
                     ,xlab = ""
                     ,ylab = "Global Active Power (Kilowatts)"))
 

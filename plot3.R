@@ -13,7 +13,9 @@ subPower$dateTime = strptime( paste(subPower$Date,subPower$Time), format="%Y-%m-
 
 ### make plot 3
 with(subPower, plot(dateTime,Sub_metering_1, type="l", col = "Black"
-                    , ylab = "Energy sub metering",xlab = ""))
+                    , ylab = "Energy sub metering",xlab = ""
+                    ,cex.lab=0.8
+                    ,cex.axis=0.8))
 with(subPower, lines(dateTime,Sub_metering_2, type="l", col = "Red"))
 with(subPower, lines(dateTime,Sub_metering_3, type="l", col = "Blue"))
 

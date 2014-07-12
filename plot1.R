@@ -11,8 +11,9 @@ power$Date = as.Date(power$Date, format = "%d/%m/%Y")
 subPower = subset(power, power$Date =="2007-02-01" | power$Date =="2007-02-02") 
 
 ### make plot 1
+par(mfrow=c(1,1))
 hist(subPower$Global_active_power, col = "red", breaks = 20, 
-     main = "Global Active Power", ylab = "",xlab = "Global Active Power (Kilowatts)")
+     main = "Global Active Power",cex.axis=.8, ylab = "Frequency",xlab = "Global Active Power (Kilowatts)")
 
 ##print plot1
 setwd("/home/ab/Dropbox/projects/JHU_DataScience/eda/project1/plots")
